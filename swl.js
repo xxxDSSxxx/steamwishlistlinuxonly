@@ -16,9 +16,10 @@
         row[j].querySelector('h4').innerHTML = '<font color=yellow>'+ row[j].querySelector('h4').innerHTML +'</font>';
       }
     }
+    row[j].querySelector('h4').innerHTML = '<a target="_blank" href="https://steamdb.info/app/'+id+'/">'+ row[j].querySelector('h4').innerHTML +'</a>';
     for (i = 0; cards[i]; i++) {
       if (id == cards[i]) {
-        row[j].querySelector('h4').innerHTML = '<font color=red>█ █ █ </font>'+ row[j].querySelector('h4').innerHTML ;
+        row[j].querySelector('h4').innerHTML = '<a target="_blank" href="http://steam.cards/index.php?gamepage-appid-'+id+'"><font color=red>█ █ █ </font></a>'+ row[j].querySelector('h4').innerHTML;
       }
     }
   }
